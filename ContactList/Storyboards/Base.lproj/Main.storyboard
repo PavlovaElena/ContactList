@@ -11,7 +11,7 @@
         <!--Root View Controller-->
         <scene sceneID="MbB-8X-amI">
             <objects>
-                <tableViewController id="uJx-i8-rSl" sceneMemberID="viewController">
+                <tableViewController id="uJx-i8-rSl" customClass="PersonsListViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="gfM-cR-o2s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,7 +44,7 @@
         <!--Persons list (details)-->
         <scene sceneID="Vxr-Dq-CLK">
             <objects>
-                <tableViewController id="Lli-jI-bnh" sceneMemberID="viewController">
+                <tableViewController id="Lli-jI-bnh" customClass="DetailPersonsListViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="kt3-Hm-eB6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,10 +70,10 @@
             </objects>
             <point key="canvasLocation" x="1496" y="780"/>
         </scene>
-        <!--View Controller-->
+        <!--Contact Details View Controller-->
         <scene sceneID="1UI-fa-mdm">
             <objects>
-                <viewController id="lhC-lx-59B" sceneMemberID="viewController">
+                <viewController id="lhC-lx-59B" customClass="ContactDetailsViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PHz-kT-PHD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,10 +105,11 @@
         <!--Persons list-->
         <scene sceneID="aBh-9s-40z">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="a9c-xk-RiQ" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="a9c-xk-RiQ" customClass="TabBarController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Persons list" id="uBo-pN-UBf"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7IL-dz-jmS">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB17960D285974B80089A578 /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17960C285974B80089A578 /* PersonsListViewController.swift */; };
+		DB17960F285974ED0089A578 /* DetailPersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB17960E285974ED0089A578 /* DetailPersonsListViewController.swift */; };
+		DB179611285975990089A578 /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB179610285975990089A578 /* ContactDetailsViewController.swift */; };
+		DB1796132859766A0089A578 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1796122859766A0089A578 /* Person.swift */; };
+		DB179615285977380089A578 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB179614285977370089A578 /* DataManager.swift */; };
 		DB4BE5D12859679700653CD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4BE5D02859679700653CD1 /* AppDelegate.swift */; };
 		DB4BE5D32859679700653CD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4BE5D22859679700653CD1 /* SceneDelegate.swift */; };
-		DB4BE5D52859679700653CD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4BE5D42859679700653CD1 /* ViewController.swift */; };
+		DB4BE5D52859679700653CD1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4BE5D42859679700653CD1 /* TabBarController.swift */; };
 		DB4BE5D82859679700653CD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4BE5D62859679700653CD1 /* Main.storyboard */; };
 		DB4BE5DA2859679900653CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4BE5D92859679900653CD1 /* Assets.xcassets */; };
 		DB4BE5DD2859679900653CD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4BE5DB2859679900653CD1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB17960C285974B80089A578 /* PersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
+		DB17960E285974ED0089A578 /* DetailPersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPersonsListViewController.swift; sourceTree = "<group>"; };
+		DB179610285975990089A578 /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
+		DB1796122859766A0089A578 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		DB179614285977370089A578 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		DB4BE5CD2859679700653CD1 /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4BE5D02859679700653CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB4BE5D22859679700653CD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DB4BE5D42859679700653CD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB4BE5D42859679700653CD1 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		DB4BE5D72859679700653CD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB4BE5D92859679900653CD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB4BE5DC2859679900653CD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,11 +66,11 @@
 		DB4BE5CF2859679700653CD1 /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
+				DB4BE5E52859681B00653CD1 /* Storyboards */,
+				DB4BE5E62859682E00653CD1 /* ViewControllers */,
 				DB4BE5E92859687700653CD1 /* Servises */,
 				DB4BE5E82859686B00653CD1 /* Models */,
 				DB4BE5E42859680F00653CD1 /* App */,
-				DB4BE5E62859682E00653CD1 /* ViewControllers */,
-				DB4BE5E52859681B00653CD1 /* Storyboards */,
 				DB4BE5E72859683A00653CD1 /* Resource */,
 			);
 			path = ContactList;
@@ -88,7 +98,10 @@
 		DB4BE5E62859682E00653CD1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				DB4BE5D42859679700653CD1 /* ViewController.swift */,
+				DB4BE5D42859679700653CD1 /* TabBarController.swift */,
+				DB17960C285974B80089A578 /* PersonsListViewController.swift */,
+				DB17960E285974ED0089A578 /* DetailPersonsListViewController.swift */,
+				DB179610285975990089A578 /* ContactDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -104,6 +117,7 @@
 		DB4BE5E82859686B00653CD1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DB1796122859766A0089A578 /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -111,6 +125,7 @@
 		DB4BE5E92859687700653CD1 /* Servises */ = {
 			isa = PBXGroup;
 			children = (
+				DB179614285977370089A578 /* DataManager.swift */,
 			);
 			path = Servises;
 			sourceTree = "<group>";
@@ -186,9 +201,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB4BE5D52859679700653CD1 /* ViewController.swift in Sources */,
+				DB17960D285974B80089A578 /* PersonsListViewController.swift in Sources */,
+				DB179615285977380089A578 /* DataManager.swift in Sources */,
+				DB4BE5D52859679700653CD1 /* TabBarController.swift in Sources */,
+				DB179611285975990089A578 /* ContactDetailsViewController.swift in Sources */,
 				DB4BE5D12859679700653CD1 /* AppDelegate.swift in Sources */,
+				DB1796132859766A0089A578 /* Person.swift in Sources */,
 				DB4BE5D32859679700653CD1 /* SceneDelegate.swift in Sources */,
+				DB17960F285974ED0089A578 /* DetailPersonsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
