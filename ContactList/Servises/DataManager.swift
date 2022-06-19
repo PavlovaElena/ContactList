@@ -9,23 +9,23 @@ class DataManager {
     
     static let shared = DataManager()
     
-    let names = [
+    let names: Set = [
         "Bruce", "John", "Steven", "Aaron", "Tim",
         "Allan", "Sharon", "Ted", "Carl", "Nicola"
     ]
     
-    let surnames = [
+    let surnames: Set = [
         "Butler", "Smith", "Black", "Robertson", "Murphy",
         "Williams", "Isaacson", "Jankin", "Pennyworth", "Dow"
     ]
     
-    let emails = [
+    let emails: Set = [
         "jjjj@mail.ru", "eeee@mail.ru", "mmmm@mail.ru", "aaaa@mail.ru",
         "wwww@mail.ru", "llll@mail.ru", "ssss@mail.ru", "qqqq@mail.ru",
         "gggg@mail.ru", "rrrr@mail.ru"
     ]
     
-    let phones = [
+    let phones: Set = [
         "432349845", "825654134", "562880225", "287185656", "645889847",
         "459477625", "994512034", "293582001", "584256922", "882100348"
     ]

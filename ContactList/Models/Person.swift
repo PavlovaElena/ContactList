@@ -19,18 +19,24 @@ struct Person {
         
         var personArray: [Person] = []
         
-        let namesMix = DataManager.shared.names.shuffled()
-        let surnamesMix = DataManager.shared.surnames.shuffled()
-        let phoneNumberMix = DataManager.shared.phones.shuffled()
-        let emailMix = DataManager.shared.emails.shuffled()
+        let names = Array(DataManager.shared.names)
+        let surnames = Array(DataManager.shared.surnames)
+        let phones = Array(DataManager.shared.phones)
+        let emails = Array(DataManager.shared.emails)
         
-        let personCount = min(namesMix.count, surnamesMix.count, phoneNumberMix.count, emailMix.count)
+        let personCount = min(names.count,
+                              surnames.count,
+                              phones.count,
+                              emails.count
+        )
         
         for person in 0..<personCount {
-            let person = Person(name: namesMix[person],
-                                surname: surnamesMix[person],
-                                phoneNumber: phoneNumberMix[person],
-                                email: emailMix[person])
+            let person = Person(name: names[person],
+                                surname: surnames[person],
+                                phoneNumber: phones[person],
+                                email: emails[person]
+            )
+            
             personArray.append(person)
         }
         
